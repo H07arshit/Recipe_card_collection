@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333333;
+}
+
+header {
+    background-color: #e76f51;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+}
+
+.members {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.members li {
+    margin: 5px 0;
+}
+
+main {
+    padding: 30px 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 330px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    color: #e76f51;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    margin-bottom: 5px;
+    color: #264653;
+}
+
+.hint {
+    font-size: 12px;
+    color: gray;
+    margin: 0 0 5px 0;
+}
+
+.servings {
+    background-color: #ffe8d6;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.servings button {
+    background-color: #e76f51;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.servings button:hover {
+    background-color: #c4553a;
+}
+
+ul li {
+    background-color: #f1faee;
+    padding: 8px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style-position: inside;
+}
+
+ul li:hover {
+    background-color: #d8f3dc;
+}
+
+ol li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #264653;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

@@ -3,11 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipe Card Collection</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>My Recipe Collection</h1>
-    <p>Welcome to my recipe collection!</p>
-    <p>created harshit branch</p>
+
+    <header>
+        <h1>Group 6 - Project #11: Recipe Card Collection</h1>
+        <h3>Group Members</h3>
+        <ul class="members">
+            <li>Harshit (202610101200016)</li>
+            <li>Arpit Yadav (202610101200017)</li>
+            <li>Aayush Kumar (202610101200018)</li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="card-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500" alt="Spaghetti">
+                <h2>Spaghetti</h2>
+                <p>A quick and tasty pasta dish with tomato sauce.</p>
+
+                <div class="servings">
+                    <span>Servings: <span class="count">2</span></span>
+                    <button onclick="changeServings(this, -1)">-</button>
+                    <button onclick="changeServings(this, 1)">+</button>
+                </div>
+
+                <h3>Ingredients</h3>
+                <p class="hint">Click an ingredient to check it off</p>
+                <ul>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="100">200</span> g spaghetti</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="150">300</span> g tomato sauce</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> garlic clove</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="10">20</span> g cheese</li>
+                </ul>
+
+                <h3>Steps</h3>
+                <ol>
+                    <li>Boil water and cook the spaghetti.</li>
+                    <li>Heat the tomato sauce with garlic in a pan.</li>
+                    <li>Mix the spaghetti with the sauce.</li>
+                    <li>Add cheese on top and serve hot.</li>
+                </ol>
+
+                <h3>Nutrition</h3>
+                <table>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>350 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>12 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td>60 g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500" alt="Pancakes">
+                <h2>Pancakes</h2>
+                <p>Soft and fluffy pancakes for a sweet breakfast.</p>
+
+                <div class="servings">
+                    <span>Servings: <span class="count">2</span></span>
+                    <button onclick="changeServings(this, -1)">-</button>
+                    <button onclick="changeServings(this, 1)">+</button>
+                </div>
+
+                <h3>Ingredients</h3>
+                <p class="hint">Click an ingredient to check it off</p>
+                <ul>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="100">200</span> g flour</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> egg</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="120">240</span> ml milk</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> tbsp sugar</li>
+                </ul>
+
+                <h3>Steps</h3>
+                <ol>
+                    <li>Mix flour, sugar, egg and milk into a smooth batter.</li>
+                    <li>Heat a pan and add a little butter.</li>
+                    <li>Pour the batter and cook until golden on both sides.</li>
+                    <li>Serve with honey or fruit.</li>
+                </ol>
+
+                <h3>Nutrition</h3>
+                <table>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>280 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>8 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td>42 g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Pizza">
+                <h2>Cheese Pizza</h2>
+                <p>A simple homemade pizza with melted cheese.</p>
+
+                <div class="servings">
+                    <span>Servings: <span class="count">2</span></span>
+                    <button onclick="changeServings(this, -1)">-</button>
+                    <button onclick="changeServings(this, 1)">+</button>
+                </div>
+
+                <h3>Ingredients</h3>
+                <p class="hint">Click an ingredient to check it off</p>
+                <ul>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> pizza base</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="3">6</span> tbsp pizza sauce</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="50">100</span> g mozzarella cheese</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="5">10</span> olives</li>
+                </ul>
+
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat the oven to 200 degrees.</li>
+                    <li>Spread the sauce on the pizza base.</li>
+                    <li>Add the cheese and olives on top.</li>
+                    <li>Bake for 12 minutes and serve.</li>
+                </ol>
+
+                <h3>Nutrition</h3>
+                <table>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>420 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>18 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td>50 g</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
