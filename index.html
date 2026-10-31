@@ -9,22 +9,16 @@
 <body>
 
     <header>
-        <h1>Group 6 - Project #11: Recipe Card Collection</h1>
-        <h3>Group Members</h3>
-        <ul class="members">
-            <li>Harshit (202610101200016)</li>
-            <li>Arpit Yadav (202610101200017)</li>
-            <li>Aayush Kumar (202610101200018)</li>
-        </ul>
-    </header>
+      <img src="Head_image.png" alt="banner" class="head_image">
+     </header>
 
     <main>
         <div class="card-container">
 
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500" alt="Spaghetti">
-                <h2>Spaghetti</h2>
-                <p>A quick and tasty pasta dish with tomato sauce.</p>
+                 <div class="card">
+                <img src="noodle.jpg" alt="Noodles">
+                <h2>Veg Noodles</h2>
+                <p>Spicy stir-fried noodles with fresh vegetables.</p>
 
                 <div class="servings">
                     <span>Servings: <span class="count">2</span></span>
@@ -35,18 +29,18 @@
                 <h3>Ingredients</h3>
                 <p class="hint">Click an ingredient to check it off</p>
                 <ul>
-                    <li onclick="toggleItem(this)"><span class="qty" data-amount="100">200</span> g spaghetti</li>
-                    <li onclick="toggleItem(this)"><span class="qty" data-amount="150">300</span> g tomato sauce</li>
-                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> garlic clove</li>
-                    <li onclick="toggleItem(this)"><span class="qty" data-amount="10">20</span> g cheese</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="100">200</span> g noodles</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="25">50</span> g carrot</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="25">50</span> g capsicum</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> tsp soy sauce</li>
                 </ul>
 
                 <h3>Steps</h3>
                 <ol>
-                    <li>Boil water and cook the spaghetti.</li>
-                    <li>Heat the tomato sauce with garlic in a pan.</li>
-                    <li>Mix the spaghetti with the sauce.</li>
-                    <li>Add cheese on top and serve hot.</li>
+                    <li>Boil the noodles and drain the water.</li>
+                    <li>Fry the chopped vegetables in a pan.</li>
+                    <li>Add the noodles and soy sauce.</li>
+                    <li>Mix well and serve hot.</li>
                 </ol>
 
                 <h3>Nutrition</h3>
@@ -57,21 +51,168 @@
                     </tr>
                     <tr>
                         <td>Calories</td>
-                        <td>350 kcal</td>
+                        <td>320 kcal</td>
                     </tr>
                     <tr>
                         <td>Protein</td>
-                        <td>12 g</td>
+                        <td>9 g</td>
                     </tr>
                     <tr>
                         <td>Carbs</td>
-                        <td>60 g</td>
+                        <td>55 g</td>
                     </tr>
                 </table>
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500" alt="Pancakes">
+                <img src="burger.jpg" alt="Burger">
+                <h2>Veg Burger</h2>
+                <p>A juicy burger with fresh lettuce, tomato and cheese.</p>
+
+                <div class="servings">
+                    <span>Servings: <span class="count">2</span></span>
+                    <button onclick="changeServings(this, -1)">-</button>
+                    <button onclick="changeServings(this, 1)">+</button>
+                </div>
+
+                <h3>Ingredients</h3>
+                <p class="hint">Click an ingredient to check it off</p>
+                <ul>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> burger bun</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> veg patty</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> cheese slice</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="2">4</span> tomato slices</li>
+                </ul>
+
+                <h3>Steps</h3>
+                <ol>
+                    <li>Cut the bun in half and toast it lightly.</li>
+                    <li>Cook the patty on a hot pan until brown.</li>
+                    <li>Place the patty, cheese and tomato on the bun.</li>
+                    <li>Close the bun and serve with sauce.</li>
+                </ol>
+
+                <h3>Nutrition</h3>
+                <table>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>450 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>15 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td>48 g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <img src="coffee.jpg" alt="Coffee">
+                <h2>Hot Coffee</h2>
+                <p>A warm and creamy cup of coffee to start your day.</p>
+
+                <div class="servings">
+                    <span>Servings: <span class="count">2</span></span>
+                    <button onclick="changeServings(this, -1)">-</button>
+                    <button onclick="changeServings(this, 1)">+</button>
+                </div>
+
+                <h3>Ingredients</h3>
+                <p class="hint">Click an ingredient to check it off</p>
+                <ul>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="2">4</span> tsp coffee powder</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="2">4</span> tsp sugar</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="100">200</span> ml milk</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="50">100</span> ml water</li>
+                </ul>
+
+                <h3>Steps</h3>
+                <ol>
+                    <li>Boil the water and milk together.</li>
+                    <li>Put coffee powder and sugar in a cup.</li>
+                    <li>Pour the hot milk into the cup.</li>
+                    <li>Stir well and enjoy.</li>
+                </ol>
+
+                <h3>Nutrition</h3>
+                <table>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>90 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>4 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td>12 g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <img src="momos.jpg" alt="Momos">
+                <h2>Veg Momos</h2>
+                <p>Soft steamed dumplings filled with spicy vegetables.</p>
+
+                <div class="servings">
+                    <span>Servings: <span class="count">2</span></span>
+                    <button onclick="changeServings(this, -1)">-</button>
+                    <button onclick="changeServings(this, 1)">+</button>
+                </div>
+
+                <h3>Ingredients</h3>
+                <p class="hint">Click an ingredient to check it off</p>
+                <ul>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="100">200</span> g flour</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="50">100</span> g cabbage</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="25">50</span> g carrot</li>
+                    <li onclick="toggleItem(this)"><span class="qty" data-amount="1">2</span> garlic clove</li>
+                </ul>
+
+                <h3>Steps</h3>
+                <ol>
+                    <li>Make a soft dough with flour and water.</li>
+                    <li>Mix chopped cabbage, carrot and garlic for the filling.</li>
+                    <li>Roll the dough, add the filling and fold it.</li>
+                    <li>Steam for 10 minutes and serve with chutney.</li>
+                </ol>
+
+                <h3>Nutrition</h3>
+                <table>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Calories</td>
+                        <td>240 kcal</td>
+                    </tr>
+                    <tr>
+                        <td>Protein</td>
+                        <td>7 g</td>
+                    </tr>
+                    <tr>
+                        <td>Carbs</td>
+                        <td>40 g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <img src="pancake.jpg" alt="Pancakes">
                 <h2>Pancakes</h2>
                 <p>Soft and fluffy pancakes for a sweet breakfast.</p>
 
@@ -120,7 +261,7 @@
             </div>
 
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Pizza">
+                <img src="pizza.jpg" alt="Pizza">
                 <h2>Cheese Pizza</h2>
                 <p>A simple homemade pizza with melted cheese.</p>
 

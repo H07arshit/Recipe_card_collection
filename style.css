@@ -5,17 +5,26 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #fff8f0;
+    background:radial-gradient(black );
     color: #333333;
 }
 
 header {
-    background-color: #e76f51;
+    background-color:black;
     color: white;
     text-align: center;
-    padding: 25px 15px;
+    padding: 10px 10px;
+   
 }
+.head_image {
+     width: 100%;
+    max-width: 100%;
+    
+    display: flex;
+    object-fit:fill;
+    height: 400px;
 
+}
 header h1 {
     margin: 0 0 10px 0;
 }
