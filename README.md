@@ -6,6 +6,17 @@
 
 ---
 
+## 👥 Group Members (Group 6)
+
+| S. No. | Student Name | Roll No. |
+|:---:|---|---|
+| 1 | Harshit | 202610101200016 |
+| 2 | Arpit Yadav | 202610101200017 |
+| 3 | Aayush Kumar | 202610101200018 |
+
+---
+
+
 ## 📖 Description
 
 Recipe Card Collection is a collection of recipe cards showing ingredients and preparation steps for favorite dishes. Each card has an image, a short description, an ingredient list, numbered steps, and a nutrition table, laid out in a responsive card grid with a hover effect.
@@ -94,15 +105,6 @@ Recipe_card_collection/
 
 ---
 
-## 👥 Group Members (Group 6)
-
-| S. No. | Student Name | Roll No. |
-|:---:|---|---|
-| 1 | Harshit | 202610101200016 |
-| 2 | Arpit Yadav | 202610101200017 |
-| 3 | Aayush Kumar | 202610101200018 |
-
----
 
 ## 📌 Project Details
 
