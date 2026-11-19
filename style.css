@@ -5,38 +5,23 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background:radial-gradient(black );
+    background: radial-gradient(white, yellow, red);
     color: #333333;
 }
 
 header {
-    background-color:black;
+    background-color: black;
     color: white;
     text-align: center;
     padding: 10px 10px;
-   
 }
+
 .head_image {
-     width: 100%;
+    width: 100%;
     max-width: 100%;
-    
     display: flex;
-    object-fit:fill;
+    object-fit: fill;
     height: 400px;
-
-}
-header h1 {
-    margin: 0 0 10px 0;
-}
-
-.members {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.members li {
-    margin: 5px 0;
 }
 
 main {
@@ -51,7 +36,8 @@ main {
 }
 
 .card {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
     background-color: white;
     border-radius: 15px;
     padding: 15px;
@@ -147,14 +133,4 @@ th, td {
 th {
     background-color: #264653;
     color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-@media (max-width: 600px) {
-    .card {
-        width: 100%;
-    }
 }
